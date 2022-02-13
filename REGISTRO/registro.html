@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <title>CADASTRO</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Cadastro</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Nome de Usuário" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="E-mail" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Crie sua Senha" required>
+                <i id="eyepass" class="fas fa-eye-slash show_hide"></i>
+            </div>
+
+
+            <div class="input-box">
+                <input type="password" placeholder="Confirme sua senha" required>
+            </div>
+            <div class="policy">
+                <input type="checkbox">
+                <h3>Eu aceito os termos & as condições</h3>
+            </div>
+            <div class="input-box button">
+                <input type="Submit" value="Cadastre-se">
+            </div>
+            <div class="text">
+                <h3>Você já tem uma conta? <a href="../LOGIN/login.html">Logar-se agora</a></h3>
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <div id="containerfooter"><span>© 2022 CPX CORPORATION from</span>
+            <div id="backgroundlogo">
+                <svg id="logocpx" width="200" height="200" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_13_2)">
+                    <path d="M248.447 575.6C227.047 575.6 207.647 571 190.247 561.8C173.047 552.4 159.447 539.5 149.447 523.1C139.647 506.5 134.747 487.8 134.747 467C134.747 446.2 139.647 427.6 149.447 411.2C159.447 394.6 173.047 381.7 190.247 372.5C207.647 363.1 227.147 358.4 248.747 358.4C266.947 358.4 283.347 361.6 297.947 368C312.747 374.4 325.147 383.6 335.147 395.6L303.947 424.4C289.747 408 272.147 399.8 251.147 399.8C238.147 399.8 226.547 402.7 216.347 408.5C206.147 414.1 198.147 422 192.347 432.2C186.747 442.4 183.947 454 183.947 467C183.947 480 186.747 491.6 192.347 501.8C198.147 512 206.147 520 216.347 525.8C226.547 531.4 238.147 534.2 251.147 534.2C272.147 534.2 289.747 525.9 303.947 509.3L335.147 538.1C325.147 550.3 312.747 559.6 297.947 566C283.147 572.4 266.647 575.6 248.447 575.6ZM458.866 362C477.466 362 493.566 365.1 507.166 371.3C520.966 377.5 531.566 386.3 538.966 397.7C546.366 409.1 550.066 422.6 550.066 438.2C550.066 453.6 546.366 467.1 538.966 478.7C531.566 490.1 520.966 498.9 507.166 505.1C493.566 511.1 477.466 514.1 458.866 514.1H416.566V572H367.966V362H458.866ZM456.166 474.5C470.766 474.5 481.866 471.4 489.466 465.2C497.066 458.8 500.866 449.8 500.866 438.2C500.866 426.4 497.066 417.4 489.466 411.2C481.866 404.8 470.766 401.6 456.166 401.6H416.566V474.5H456.166Z" fill="#52FF00"/>
+                    <path d="M719.993 572L669.293 499.1L619.493 572H563.693L641.393 465.2L567.593 362H622.793L671.093 430.1L718.493 362H770.993L697.793 463.4L776.093 572H719.993Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_13_2">
+                    <rect width="900" height="900" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const input = document.querySelectorAll("input"),
+            showHide = document.querySelector(".show_hide"),
+            indicator = document.querySelector(".indicator"),
+            iconText = document.querySelector(".icon-text"),
+            text = document.querySelector(".text");
+
+
+        showHide.addEventListener("click", () => {
+            if (input[2].type === "password") {
+                input[2].type = "text";
+                showHide.classList.replace("fa-eye-slash", "fa-eye");
+            } else {
+                input[2].type = "password";
+                showHide.classList.replace("fa-eye", "fa-eye-slash");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
