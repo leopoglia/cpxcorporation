@@ -6,6 +6,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #12121244;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #12121244;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -266,6 +278,7 @@
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .home-section .home-content .bx-menu,
@@ -273,6 +286,9 @@
     color: #ffffff;
     font-size: 35px;
     z-index: 1;
+    border-radius: 6px;
+    background-color: #333;
+    padding: 3px;
 }
 
 .home-section .home-content .bx-menu {
@@ -290,12 +306,12 @@
     top: 0;
     width: 100%;
     height: 200px;
-    background-color: #51ff00;
+    background-color: rgb(205, 205, 207);
     background-size: 100%;
 }
 
 #profileicon {
-    background-image: url('https://i.imgur.com/XZ97zah.jpg');
+    background-image: url('https://i.imgur.com/7dmfJmk.jpg');
     background-size: 100%;
     margin-top: 107px;
     margin-left: 80px;
@@ -314,27 +330,58 @@
 }
 
 #profilenickname {
+    margin-left: 250px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
     width: 200px;
-    height: 100%;
-    margin-left: 230px;
-    padding: 10px;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     direction: ltr;
+}
+
+#profileemblems {
+    width: 60%;
+    height: 80%;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     color: #fff;
-    font-size: 20px;
 }
 
-#profileemblems {
-    width: 200px;
-    height: 80%;
-    background-color: #51ff00;
-    border-radius: 20px;
+.emblemsicons {
+    height: 35px;
+    margin: 5px;
+    background-color: #333;
+    padding: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#personconfig {
+    height: 40px;
+    border-radius: 6px;
+    background-color: #333;
+    padding: 3px;
+    z-index: 1;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#containerprofile {
+    width: 100%;
+    height: 100vh;
+    margin-top: 8px;
+    background-color: #121212;
+}
+
+@media (max-width: 1150px) {
+    #profileemblems {
+        display: none;
+    }
 }
 
 @media (max-width: 420px) {
