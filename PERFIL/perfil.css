@@ -1,0 +1,129 @@
+.home-section {
+    position: relative;
+    background: var(--ce);
+    height: 100vh;
+    left: 260px;
+    width: calc(100% - 260px);
+    transition: all 0.5s ease;
+}
+
+.sidebar.close~.home-section {
+    left: 78px;
+    width: calc(100% - 78px);
+}
+
+.home-section .home-content {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-section .home-content .bx-menu,
+.home-section .home-content .text {
+    color: var(--b);
+    font-size: 35px;
+    z-index: 1;
+    border-radius: 6px;
+    background-color: var(--c);
+    padding: 3px;
+}
+
+.home-section .home-content .bx-menu {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.home-section .home-content .text {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#profilecover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(205, 205, 207);
+    background-size: 100%;
+}
+
+#profileicon {
+    background-image: url('https://i.imgur.com/7dmfJmk.jpg');
+    background-size: 100%;
+    margin-top: 107px;
+    margin-left: 80px;
+    border-radius: 30px;
+    border: 5px solid var(--ce);
+    height: 150px;
+    width: 150px;
+}
+
+#profileinfos {
+    width: 100%;
+    height: 50px;
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+}
+
+#profilenickname {
+    margin-left: 250px;
+    color: var(--b);
+    font-size: 18px;
+    font-weight: 500;
+    width: 200px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+}
+
+#profileemblems {
+    width: 60%;
+    height: 80%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--b);
+}
+
+.emblemsicons {
+    height: 35px;
+    margin: 5px;
+    background-color: var(--c);
+    padding: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#personconfig {
+    height: 40px;
+    border-radius: 6px;
+    background-color: var(--c);
+    padding: 3px;
+    z-index: 1;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#containerprofile {
+    width: 100%;
+    height: 100vh;
+    margin-top: 8px;
+    background-color: var(--ce);
+}
+
+@media (max-width: 1150px) {
+    #profileemblems {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .sidebar.close .nav-links li .sub-menu {
+        display: none;
+    }
+}
