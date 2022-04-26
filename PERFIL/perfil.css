@@ -49,7 +49,8 @@
 }
 
 #profileicon {
-    background-image: url('https://i.imgur.com/7dmfJmk.jpg');
+    background-image: url('../src/5.png');
+    background-color: var(--caa);
     background-size: 100%;
     margin-top: 107px;
     margin-left: 80px;
@@ -114,6 +115,41 @@
     height: 100vh;
     margin-top: 8px;
     background-color: var(--ce);
+}
+
+#insertpost{
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    background-color: var(--c);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input-box{
+    margin-left: 80px;
+    width: 50%;
+    height: 40%;
+}
+
+.input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--c);
+    background-color: var(--pa);
+    color: var(--b);
+    border: 3px solid var(--ca);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: var(--v);
 }
 
 @media (max-width: 1150px) {

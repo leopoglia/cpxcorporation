@@ -1,9 +1,11 @@
 :root{
     --p: #000;
+    --pa: #333;
     --b: #fff;
     --c: #202020;
     --ce: #0f0f0f;
     --ca: #707070;
+    --caa: #cdcdcf;
     --v: #51ff00;
     --ve: #39b300;
 }
@@ -28,7 +30,6 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--c);
     border-radius: 8px;
 }
-
 
 /* SLIDE BAR */ 
 
@@ -202,7 +203,7 @@ body::-webkit-scrollbar-thumb {
 .sidebar .nav-links li .sub-menu.blank {
     opacity: 1;
     pointer-events: auto;
-    padding: 3px 20px 6px 16px;
+    padding: 13px 20px 6px 16px;
     opacity: 0;
     pointer-events: none;
 }
