@@ -73,23 +73,10 @@ form .policy {
 }
 
 form h3 {
-    color:  var(--ca);
+    color: var(--ca);
     font-size: 14px;
     font-weight: 500;
     margin-left: 10px;
-}
-
-.input-box.button input {
-    color: var(--b);
-    letter-spacing: 1px;
-    border: none;
-    background: var(--v);
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.input-box.button input:hover {
-    background: var(--ve);
 }
 
 form .text h3 {
@@ -112,7 +99,7 @@ form .text h3 a:hover {
     position: absolute;
     margin-top: 20px;
     margin-left: -40px;
-    color:  var(--ca);
+    color: var(--ca);
 }
 
 footer {

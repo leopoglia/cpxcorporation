@@ -1,4 +1,4 @@
-:root{
+:root {
     --p: #000;
     --pa: #333;
     --b: #fff;
@@ -31,7 +31,8 @@ body::-webkit-scrollbar-thumb {
     border-radius: 8px;
 }
 
-/* SLIDE BAR */ 
+
+/* SLIDE BAR */
 
 .sidebar {
     position: fixed;
@@ -273,4 +274,32 @@ body::-webkit-scrollbar-thumb {
 
 .sidebar .profile-details .job {
     font-size: 12px;
+}
+
+.input-box.button input {
+    color: var(--b);
+    letter-spacing: 1px;
+    border: none;
+    background: var(--v);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.input-box.button input:hover {
+    background: var(--ve);
+}
+
+.input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--c);
+    background-color: var(--pa);
+    color: var(--b);
+    border: 3px solid var(--ca);
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
