@@ -45,7 +45,7 @@ p {
     opacity: 80%;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 650px) {
     .swiper-slide {
         margin-left: 30px;
     }
