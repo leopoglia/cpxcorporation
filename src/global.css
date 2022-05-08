@@ -313,3 +313,36 @@ body::-webkit-scrollbar-thumb {
     border-radius: 6px;
     transition: all 0.3s ease;
 }
+
+@media(max-width: 650px) {
+    .sidebar.close,
+    .sidebar {
+        width: 100%;
+        height: 70px;
+        bottom: 0;
+        top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .sidebar .nav-links {
+        display: flex;
+        padding: 0;
+    }
+    i .span,
+    .link_name {
+        display: none;
+    }
+    .sidebar .nav-links li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px !important;
+    }
+    .bx.bx-menu {
+        display: none;
+    }
+    .profile-details {
+        width: 20px !important;
+    }
+}
