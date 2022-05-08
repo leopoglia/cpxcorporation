@@ -323,15 +323,16 @@ body::-webkit-scrollbar-thumb {
         top: auto;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-evenly;
     }
     .sidebar .nav-links {
         display: flex;
         padding: 0;
     }
     i .span,
-    .link_name {
-        display: none;
+    .link_name,
+    .bx.bx-menu {
+        display: none !important;
     }
     .sidebar .nav-links li {
         display: flex;
@@ -339,10 +340,11 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
         width: 35px !important;
     }
-    .bx.bx-menu {
-        display: none;
-    }
     .profile-details {
         width: 20px !important;
+    }
+    .home-section {
+        left: 0 !important;
+        width: 100% !important;
     }
 }
