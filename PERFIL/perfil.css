@@ -32,6 +32,7 @@
 .home-section .home-content .bx-menu {
     margin: 0 15px;
     cursor: pointer;
+    position: fixed;
 }
 
 .home-section .home-content .text {
@@ -43,7 +44,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 200px;
+    height: 180px;
     background-color: rgb(205, 205, 207);
     background-size: 100%;
 }
@@ -52,24 +53,24 @@
     background-image: url('../src/5.png');
     background-color: var(--caa);
     background-size: 100%;
-    margin-top: 107px;
+    margin-top: 100px;
     margin-left: 80px;
     border-radius: 30px;
     border: 5px solid var(--ce);
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
 }
 
 #profileinfos {
     width: 100%;
     height: 50px;
-    margin-top: 140px;
+    margin-top: 120px;
     display: flex;
     align-items: center;
 }
 
 #profilenickname {
-    margin-left: 250px;
+    margin-left: 220px;
     color: var(--b);
     font-size: 18px;
     font-weight: 500;
@@ -82,12 +83,13 @@
 }
 
 .profileemblems {
-    width: 60%;
+    width: 65%;
     height: 80%;
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    padding-right: 20px;
+    justify-content: flex-end;
     color: var(--b);
 }
 
@@ -110,14 +112,9 @@
     background-color: var(--pa);
 }
 
-#personconfig {
-    height: 40px;
-    border-radius: 6px;
-    background-color: var(--c);
-    padding: 3px;
-    z-index: 1;
-    margin-right: 10px;
-    cursor: pointer;
+.config-perfil #emblemsicons {
+    margin-left: 20px;
+    background-color: var(--pa);
 }
 
 #containerprofile {
@@ -129,18 +126,18 @@
 
 #insertpost {
     width: 100%;
-    height: 150px;
-    margin-top: 30px;
+    height: 100px;
+    margin-top: 10px;
     background-color: var(--c);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: start;
 }
 
 .input-box {
-    margin-left: 80px;
     width: 50%;
-    height: 40%;
+    height: 50%;
+    margin-left: 85px;
 }
 
 .input-box input:focus {
@@ -148,8 +145,13 @@
 }
 
 .input-box.button {
+    margin-left: 20px;
     display: flex;
-    width: 200px !important;
+    width: 100px !important;
+}
+
+.input-box.button input {
+    text-align: center;
 }
 
 .input-box.button .material-symbols-outlined {
@@ -159,24 +161,38 @@
     cursor: pointer;
 }
 
-.input-box.button:hover .material-symbols-outlined {
-    animation: submit-button 0.5s;
+.config-modal {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: -100px;
+    border-radius: 5px;
+    width: 160px;
+    height: 80px;
+    background-color: var(--pa);
+    display: none;
+    text-align: center;
+    cursor: pointer;
 }
 
-@keyframes submit-button {
-    0% {
-        margin-left: 140px;
-    }
-    50% {
-        margin-left: 145px;
-    }
-    100% {
-        margin-left: 140px;
-    }
+.config-modal div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0px 0px 5px 5px;
+    transition: 0.5s;
+    padding-left: 15px;
 }
 
-@media (max-width: 1150px) {
-    #profileemblems {
+.config-modal .material-symbols-outlined {
+    margin-right: 10px;
+}
+
+.config-modal div:hover {
+    background-color: var(--ce);
+}
+
+@media (max-width: 850px) {
+    .profileemblems {
         display: none;
     }
 }
