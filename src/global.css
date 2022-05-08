@@ -315,39 +315,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media(max-width: 650px) {
-    .sidebar.close,
-    .sidebar {
+    .sidebar.close {
         width: 100%;
         height: 70px;
         bottom: 0;
         top: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
     }
-    .sidebar .nav-links {
-        display: flex;
-        padding: 0;
-    }
-    i .span,
-    .link_name,
-    .bx.bx-menu {
-        display: none !important;
-    }
-    .sidebar .nav-links li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 35px !important;
-    }
-    .profile-details {
-        width: 20px !important;
+    .bx-menu {
+        position: absolute !important;
+        bottom: 0 !important;
+        z-index: 30;
+        margin-bottom: 20px !important;
+        z-index: 9999;
+        right: 0;
     }
     .home-section {
         left: 0 !important;
         width: 100% !important;
     }
-    .swiper-slide {
-        margin-left: 0px !important;
+    .home-content span {
+        margin-left: 5px !important;
     }
 }
