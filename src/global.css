@@ -276,7 +276,8 @@ body::-webkit-scrollbar-thumb {
     font-size: 12px;
 }
 
-.input-box.button input {
+.input-box.button input,
+.input-box.button button {
     color: var(--b);
     letter-spacing: 1px;
     border: none;
@@ -285,7 +286,16 @@ body::-webkit-scrollbar-thumb {
     font-weight: 600;
 }
 
-.input-box.button input:hover {
+.input-box.button button {
+    height: 40px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    border-radius: 6px;
+}
+
+.input-box.button input:hover,
+.input-box.button button:hover {
     background: var(--ve);
 }
 
