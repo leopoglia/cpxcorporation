@@ -1,0 +1,63 @@
+:root {
+    --swiper-theme-color: #e5e5e5 !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+body {
+    color: #e5e5e5;
+    overflow-x: hidden;
+}
+
+.swiper-container {
+    overflow: visible;
+}
+
+p {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.swiper-slide {
+    transition: all 300ms ease-in-out;
+    border-radius: 5px;
+}
+
+.swiper-slide img {
+    border-radius: 5px;
+    max-width: 18rem;
+    cursor: grab;
+}
+
+.swiper-slide img:active {
+    cursor: grabbing;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    font-size: 5px !important;
+}
+
+.swiper-slide img {
+    height: 160px;
+}
+
+.swiper-slide img:hover {
+    opacity: 80%;
+}
+
+@media screen and (max-width: 599px) {
+    .swiper-slide img {
+        max-width: 14rem;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .swiper-slide img {
+        max-width: 10.5rem;
+        border-radius: 2px;
+    }
+}
