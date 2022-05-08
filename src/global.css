@@ -347,4 +347,7 @@ body::-webkit-scrollbar-thumb {
         left: 0 !important;
         width: 100% !important;
     }
+    .swiper-slide {
+        margin-left: 0px !important;
+    }
 }

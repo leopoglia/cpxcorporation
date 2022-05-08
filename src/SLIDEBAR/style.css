@@ -46,9 +46,6 @@ p {
 }
 
 @media screen and (max-width: 650px) {
-    .swiper-slide {
-        margin-left: 30px;
-    }
     .swiper-slide img {
         max-width: 14rem;
     }
