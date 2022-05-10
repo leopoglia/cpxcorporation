@@ -278,7 +278,7 @@ body::-webkit-scrollbar-thumb {
 
 .input-box.button input,
 .input-box.button button {
-    color: var(--b);
+    color: var(--c) !important;
     letter-spacing: 1px;
     border: none;
     background: var(--v);
@@ -314,6 +314,22 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.3s ease;
 }
 
+.sidebar .logo-details i {
+    margin-top: 85px;
+    cursor: pointer;
+}
+
+#logocpx{
+    width: 80px !important;
+    height: 80px !important;
+    position: absolute;
+}
+
+
+.input-box input:focus {
+    border-color: var(--v);
+}
+
 @media(max-width: 650px) {
     * {
         transition: 0s none !important;
@@ -333,7 +349,7 @@ body::-webkit-scrollbar-thumb {
         z-index: 30;
         margin-bottom: 20px !important;
         z-index: 9999;
-        right: 0;
+        margin-left: 100px;
     }
     .home-section {
         left: 0 !important;
