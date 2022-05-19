@@ -6,7 +6,6 @@ body {
 .home-section {
     position: relative;
     background: var(--ce);
-    height: 100vh;
     left: 260px;
     width: calc(100% - 260px);
     transition: all 0.5s ease;
@@ -61,9 +60,25 @@ iframe {
     margin-left: 10px;
     font-size: 18px;
     margin-left: 10px;
-    border-bottom: 2px solid var(--v);
     background-color: var(--ce);
     padding: 5px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.header-section span::before {
+    content: '';
+    position: absolute;
+    margin-top: 20px;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background: var(--v);
 }
 
 .title span:hover{
@@ -81,6 +96,50 @@ iframe {
 
 .input-box{
     margin-right: 10px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    margin-top: 54px;
+    width: 101%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer #logo{
+    width: 50px;
+    height: 50px;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .help{
+    fill: var(--b);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: 0 20px 0 20px;
+}
+
+footer .help:hover{
+    fill: var(--v);
+}
+
+footer span{
+    color: var(--b);
 }
 
 @media (max-width: 420px) {

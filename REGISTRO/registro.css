@@ -74,6 +74,10 @@ form .policy {
     align-items: center;
 }
 
+input:checked{
+    background-color: #c03;
+}
+
 form h3 {
     color: var(--ca);
     font-size: 14px;
